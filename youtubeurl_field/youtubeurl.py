@@ -26,13 +26,13 @@ class YoutubeUrl(object):
     @property
     def embed_url(self):
         if not self.is_empty():
-            return 'http://youtube.com/embed/%s/' % self.video_id
+            return 'https://youtube.com/embed/%s/' % self.video_id
         return None
 
     @property
     def thumb(self):
         if not self.is_empty():
-            return "http://img.youtube.com/vi/%s/2.jpg" % self.video_id
+            return "https://img.youtube.com/vi/%s/2.jpg" % self.video_id
         return None
 
     def __unicode__(self):
